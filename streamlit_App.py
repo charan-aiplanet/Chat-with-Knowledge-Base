@@ -56,7 +56,7 @@ def get_conversational_chain(hf_api_key):
     Answer:
     """
     llm = HuggingFaceHub(
-        repo_id="google/flan-t5-xl",
+        repo_id="tiiuae/falcon-7b-instruct",
         model_kwargs={"temperature": 0.3, "max_length": 512},
         huggingfacehub_api_token=hf_api_key,
     )
